@@ -8,6 +8,9 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { persistStore } from 'redux-persist';
 import App from './App';
 import Spinner from './components/Spinner';
+import { disableReactDevTools } from '@fvilers/disable-react-devtools';
+
+if(process.env.NODE_ENV === 'production') disableReactDevTools()
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);

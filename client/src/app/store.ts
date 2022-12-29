@@ -6,7 +6,6 @@ import addProductReducer from '../features/mushroomsSlice';
 import productDataReducer from '../features/mushroomsSlice';
 import ordersReducer from '../features/ordersSlice';
 import ordersClientSideReducer from '../features/ordersSlice';
-import { createAction } from '@reduxjs/toolkit';
 import {
   persistReducer,
   FLUSH,
@@ -44,6 +43,7 @@ export const store = configureStore({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
+      devTools: false
     }),
 });
 

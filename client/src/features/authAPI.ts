@@ -1,10 +1,6 @@
-import { createAction, createAsyncThunk } from "@reduxjs/toolkit";
+import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { FormDataProps } from "../pages/SignIn";
-import jwt_decode from 'jwt-decode';
-import Cookies from 'js-cookie';
-
-
 
 
 export const signUp = createAsyncThunk(
