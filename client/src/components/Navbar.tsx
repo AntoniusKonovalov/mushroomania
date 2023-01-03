@@ -36,14 +36,14 @@ const Navbar = () => {
             className={ pathMatchRoute('/') ? 'navbarListItemNameActive' : 'navbarListItemName' }
             >Store</p>
           </li>
-          <li className="navbarListItem" onClick={() => navigate('/card')}>
+          <li className="navbarListItem" onClick={() => navigate('/cart')}>
             <div className='iconCart' >
               <CartIcon 
-              fill={ pathMatchRoute('/card') ? '#3f3f3f' : '#8f8f8f' } stroke = { pathMatchRoute('/card') ? '#3f3f3f' : '#8f8f8f' } width='36px' height='36px'/>
+              fill={ pathMatchRoute('/cart') ? '#3f3f3f' : '#8f8f8f' } stroke = { pathMatchRoute('/cart') ? '#3f3f3f' : '#8f8f8f' } width='36px' height='36px'/>
               {quantity > 0 ? <div className='iconCartNumber'> {quantity} </div> : null}
             </div>
             <p 
-            className={ pathMatchRoute('/card') ? 'navbarListItemNameActive' : 'navbarListItemName' }
+            className={ pathMatchRoute('/cart') ? 'navbarListItemNameActive' : 'navbarListItemName' }
             >Cart</p>
           </li>
           <li className="navbarListItem" onClick={() => navigate('/profile')}>

@@ -74,6 +74,7 @@ a {
 .pageContainer,
 .offers,
 .profile,
+.shoppingCart,
 .listingDetails,
 .category,
 .explore {
@@ -83,6 +84,7 @@ a {
   .pageContainer,
   .offers,
   .profile,
+  .shoppingCart,
   .listingDetails,
   .category,
   .explore {
@@ -325,6 +327,27 @@ a {
         background-color: #76bfb6;
       }
     }
+  }
+}
+
+@media (max-width: 1300px) {
+}
+
+@media (max-width: 1100px) {
+}
+
+@media (max-width: 900px) {
+}
+
+@media (max-width: 420px) {
+  //Cart Page
+  .shoppingCart{
+    width: 100px;
+    background-color: #26263c1c;
+  }
+  .paidOrdersMainCont{
+    position: absolute;
+    
   }
 }
 
@@ -1831,7 +1854,7 @@ a {
   overflow: auto;
   height: 80vh;
   top: 50px;
-  right: 10px;
+  right: 0px;
   width: 550px;
   z-index: 1;
   .paidOrders{

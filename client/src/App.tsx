@@ -15,7 +15,7 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Mushrooms />} />
-        <Route path='/card' element={<Cart />} />
+        <Route path='/cart' element={<Cart />} />
         <Route path='profile' element={<PrivateRoute />}>
           <Route path='/profile/' element={<Profile />} />
         </Route>

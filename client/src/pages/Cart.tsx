@@ -48,40 +48,41 @@ const Card = () => {
   }, [ordersClient, mushrooms])
 
   return (
-    <>
-    <div className={`paidOrdersMainCont ${isVisible ? 'active' : ''}`}>
-        <div className="paidOrders">
-          {paidOrdersState === 'loading' ? <Spinner /> : paidUserOrders?.map((paidOrder:any) => (
-            <OrdersSlideOut key={paidOrder.order_id}  {...paidOrder} />
-          ))}
+    <div className='shoppingCart'>
+        <div className={`paidOrdersMainCont ${isVisible ? 'active' : ''}`}>
+            <div className="paidOrders">
+              {paidOrdersState === 'loading' ? <Spinner /> : paidUserOrders?.map((paidOrder:any) => (
+                <OrdersSlideOut key={paidOrder.order_id}  {...paidOrder} />
+              ))}
+            </div>
+            <div className="tab" onClick={() => {
+              setIsvisible((prev) => !prev)
+              !isVisible && dispatch(getPaidOrders())
+              }}>
+              <div className="tabContent">
+                <ArrowIcon className={`arrow ${isVisible ? 'rotated' : null}`} stroke="white" />
+                <h4>My orders</h4>
+              </div>
+            </div>
         </div>
-        <div className="tab" onClick={() => {
-          setIsvisible((prev) => !prev)
-          !isVisible && dispatch(getPaidOrders())
-          }}>
-          <div className="tabContent">
-            <ArrowIcon className={`arrow ${isVisible ? 'rotated' : null}`} stroke="white" />
-            <h4>My orders</h4>
+        <div className="cartMainCont">
+          <h1>Shopping Cart</h1>
+          <div className="projectCart">
+            <div className="shop">
+              {price && ordersClient?.map((order:any) => (
+                <CartItem key={order.mushroom_id} {...order} />
+                ))}
+            </div>
+            <div className="checkOutSect">
+        
+              {price && <p>Total: {price}</p>}
+              <button onClick={() => handleCheckoutCart(ordersClient)}>Checkout</button>
+            </div>
+              
           </div>
         </div>
-    </div>
-    <div className="cartMainCont">
-      <h1>Shopping Cart</h1>
-      <div className="projectCart">
-        <div className="shop">
-          {price && ordersClient?.map((order:any) => (
-            <CartItem key={order.mushroom_id} {...order} />
-            ))}
-        </div>
-        <div className="checkOutSect">
-    
-          {price && <p>Total: {price}</p>}
-          <button onClick={() => handleCheckoutCart(ordersClient)}>Checkout</button>
-        </div>
-          
-      </div>
-    </div>
-  </>
+
+  </div>
   )
 }
 
