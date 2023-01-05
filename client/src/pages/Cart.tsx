@@ -81,6 +81,9 @@ const Card = () => {
               
           </div>
         </div>
+        <footer className='navbar'>
+          
+        </footer>
 
   </div>
   )

@@ -27,7 +27,7 @@ const Navbar = () => {
   }
 
   return (
-    <footer className='navbar'>
+    <footer id="navBarId" className='navbar'>
       <nav className="navbarNav">
         <ul className="navbarListItems">
           <li className="navbarListItem" onClick={() => navigate('/')}>
