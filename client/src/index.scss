@@ -1940,10 +1940,72 @@ a {
   }
 
   @media (max-width: 420px) {
-          // Paid Products SlideOut Component
-          .shoppingCart{
 
-            .paidOrdersMainCont{
+    .shoppingCart{
+      background-color: #cfcf23;
+    
+
+      .cartMainCont{
+        max-width: 380px;
+        // margin-left: 50px;
+        background-color: #74b482;
+        
+        .projectCart{
+          .shop{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+
+            .cartItem{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 85%;
+              height: 120px;
+              box-shadow: rgba(100, 100, 111, 0.2) 0px 3px 18px 0px;
+              img{
+                width: 140px;
+                height: 90px;
+              }
+
+              .contCartItem{
+                background-color: #76bfb6;
+                
+                h3 {
+                  margin-bottom: 0px;
+                  font-size: .8rem;
+                  margin:  0px;
+                  padding: 0;
+                }
+                h4{
+                  font-size: .75rem;
+                  margin: 5px;
+                }
+                p{
+                  font-size: .8rem;
+                  margin: 5px;
+                }
+
+                .incrDecrCartItemQty{
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+                  padding: 5px 10px;
+                }
+
+                button{
+
+                  padding: 2px 7px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .paidOrdersMainCont{
+              // Paid Products SlideOut Component
               top: 90px;
               position: absolute;
               z-index: 1;
