@@ -1036,12 +1036,8 @@ a {
   }
   @media (max-width: 420px) {
     // mushrooms page
-    #productPageID{
-      display: flex;
-      justify-items: center;
-      justify-self: center;
-      justify-content: center;      
-      margin-right: 45px;
+    #productPageID{    
+      // margin-right: 45px;
       gap: 30px;
     }
     #productID{
@@ -1830,7 +1826,7 @@ a {
     }
       // Paid Products SlideOut Component
       .paidOrdersMainCont{
-        // transform: translateX(430px);
+        transform: translateX(430px);
         transition: all .6s ease;
         position: absolute;
         overflow: auto;
@@ -1864,7 +1860,6 @@ a {
                 width: 120px;
                 max-height: 70px;
                 object-fit: cover;
-                box-shadow: 0px 1.3px 2px #C5C8CD, -0px -1.3px 2.2px rgba(255, 255, 255, 0.6);
                 &:hover{
                   border: none;
                   box-shadow: inset 1px 1px 3.6px #BDC0C5, inset -1.3px -1.3px 4px rgba(228, 228, 228, 0.6);
@@ -1945,7 +1940,67 @@ a {
   }
 
   @media (max-width: 420px) {
-    //Cart Page
+          // Paid Products SlideOut Component
+          .shoppingCart{
+
+            .paidOrdersMainCont{
+              top: 90px;
+              position: absolute;
+              z-index: 1;
+              width: 360px;
+              transform: translateX(255px);
+              
+              .paidOrders{
+                left: 100px;
+
+                .paidProductCont{
+                  width: 270px;
+                  gap: 20px;
+                  display: flex;
+                  align-items: center;
+                  p{
+                    padding: 0;
+                    margin: .2rem 0;
+                    font-size: .7rem;
+                  }
+                  
+                  img{
+                    width: 100px;
+                  }
+                }
+              }
+
+              .content{
+                h4{
+                  padding: 0;
+                    margin: .2rem 0;
+                    font-size: .2rem;
+                }
+              }
+
+              .tab{
+                width: 105px;
+                height: 55px;
+                padding: 0px 4px;
+                .tabContent{
+                  gap: 2px;
+                  h4{
+                    font-size: .8rem;
+                  }
+                }
+              }
+            }
+
+            .paidOrdersMainCont.active {
+              transform: translateX(0px);
+    
+            }
+          }
+          #navBarId {
+            position: fixed;
+            z-index: 2;
+            border: 10px solid black;
+          }
 
   }
 
