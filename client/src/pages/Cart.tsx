@@ -11,6 +11,7 @@ import OrdersSlideOut from '../components/OrdersSlideOut';
 import { ReactComponent as ArrowIcon } from '../assets/svg/arrow.svg'
 import { getMushrooms } from '../features/mushroomsAPI';
 import { useLocation } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 
 
 const Card = () => {
@@ -81,9 +82,6 @@ const Card = () => {
               
           </div>
         </div>
-        <footer className='navbar'>
-          
-        </footer>
 
   </div>
   )
