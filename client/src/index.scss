@@ -1942,21 +1942,23 @@ a {
   @media (max-width: 420px) {
 
     .shoppingCart{
-      background-color: #cfcf23;
+      background-color: #2337cf;
+      border: 8px solid rgb(198, 20, 20);
+      margin: auto;
+      max-width: 350px;
     
 
       .cartMainCont{
-        max-width: 380px;
-        // margin-left: 50px;
         background-color: #74b482;
         
         .projectCart{
+          
           .shop{
             display: flex;
             flex-direction: column;
+            border: 8px solid black;
             align-items: center;
-            
-
+            background-color: red;
             .cartItem{
               display: flex;
               justify-content: center;
@@ -1965,16 +1967,19 @@ a {
               height: 120px;
               box-shadow: rgba(100, 100, 111, 0.2) 0px 3px 18px 0px;
               img{
-                width: 140px;
-                height: 90px;
+                width: 70px;
+                height: 40px;
               }
-
+              
               .contCartItem{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
                 background-color: #76bfb6;
                 
                 h3 {
                   margin-bottom: 0px;
-                  font-size: .8rem;
+                  font-size: .75rem;
                   margin:  0px;
                   padding: 0;
                 }
@@ -2010,7 +2015,8 @@ a {
               position: absolute;
               z-index: 1;
               width: 360px;
-              transform: translateX(255px);
+              transform: translateX(0px);
+              opacity: 0;
               
               .paidOrders{
                 left: 100px;
@@ -2058,11 +2064,11 @@ a {
     
             }
           }
-          #navBarId {
-            position: fixed;
-            z-index: 2;
-            border: 10px solid black;
-          }
+          // #navBarId {
+          //   position: fixed;
+          //   z-index: 2;
+          //   // border: 10px solid black;
+          // }
 
   }
 
