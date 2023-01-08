@@ -1945,7 +1945,6 @@ a {
       // background-color: #2337cf;
       // border: 8px solid rgb(198, 20, 20);
       margin: auto;
-      max-width: 350px;
     
 
       .cartMainCont{
@@ -1968,6 +1967,7 @@ a {
               height: 120px;
               box-shadow: rgba(100, 100, 111, 0.2) 0px 3px 18px 0px;
               img{
+                margin-left: 10px;
                 width: 70px;
                 height: 40px;
               }
@@ -1976,6 +1976,8 @@ a {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
+                justify-content: center;
+                margin-bottom: 20px;
                 // background-color: #76bfb6;
                 
                 h3 {
@@ -2019,8 +2021,8 @@ a {
               position: absolute;
               z-index: 1;
               width: 360px;
-              transform: translateX(0px);
-              opacity: 0;
+              transform: translateX(250px);
+              // opacity: 0;
               
               .paidOrders{
                 left: 100px;
