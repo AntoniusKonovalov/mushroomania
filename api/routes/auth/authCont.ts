@@ -57,7 +57,7 @@ export const addUser = async (req, res) => {
       db.query(q, [values], (err, data) => {
         if (err) return res.json(err)
         const user_id = data.insertId
-
+        console.log('this is data', data)
         const q = ` SELECT * FROM users WHERE email = '${email}' `
         db.query(q, (err, data) => {
           console.log(data)
