@@ -210,7 +210,6 @@ a {
 //////////////////////
 .navbar {
   position: fixed;
-  z-index: 2;
   left: 0;
   bottom: 0;
   right: 0;
@@ -2019,16 +2018,21 @@ a {
               // Paid Products SlideOut Component
               top: 90px;
               position: absolute;
-              z-index: 1;
-              width: 360px;
-              transform: translateX(250px);
-              // opacity: 0;
+              transform: translateX(0);
               
               .paidOrders{
-                left: 100px;
-
+                position: absolute;
+                left: 550px;
+                width: 250px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+                
+                // height: 400px;
                 .paidProductCont{
-                  width: 270px;
+                  width: 100%;
                   gap: 20px;
                   display: flex;
                   align-items: center;
@@ -2041,41 +2045,37 @@ a {
                   img{
                     width: 100px;
                   }
-                }
-              }
-
-              .content{
-                h4{
-                  padding: 0;
-                    margin: .2rem 0;
-                    font-size: .2rem;
-                }
-              }
-
-              .tab{
-                width: 105px;
-                height: 55px;
-                padding: 0px 4px;
-                .tabContent{
-                  gap: 2px;
+                .content{
                   h4{
-                    font-size: .8rem;
+                    padding: 0;
+                      margin: .2rem 0;
+                      font-size: .2rem;
                   }
                 }
               }
+              .tab{
+                  left: -110px;
+                  width: 110px;
+                  height: 55px;
+                  padding: 0px 4px;
+                  .tabContent{
+                    gap: 2px;
+                    h4{
+                      font-size: .8rem;
+                    }
+                  }
+                }
+            }
+                 
             }
 
             .paidOrdersMainCont.active {
-              transform: translateX(0px);
+              .paidOrders{
+                left: 290px;
+              }
     
             }
           }
-          // #navBarId {
-          //   position: fixed;
-          //   z-index: 2;
-          //   // border: 10px solid black;
-          // }
-
   }
 
 

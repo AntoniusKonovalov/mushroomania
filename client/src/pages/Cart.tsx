@@ -55,14 +55,14 @@ const Card = () => {
               {paidOrdersState === 'loading' ? <Spinner /> : paidUserOrders?.map((paidOrder:any) => (
                 <OrdersSlideOut key={paidOrder.order_id}  {...paidOrder} />
               ))}
-            </div>
-            <div className="tab" onClick={() => {
-              setIsvisible((prev) => !prev)
-              !isVisible && dispatch(getPaidOrders())
-              }}>
-              <div className="tabContent">
-                <ArrowIcon className={`arrow ${isVisible ? 'rotated' : null}`} stroke="white" />
-                <h4>My orders</h4>
+              <div className="tab" onClick={() => {
+                setIsvisible((prev) => !prev)
+                !isVisible && dispatch(getPaidOrders())
+                }}>
+                <div className="tabContent">
+                  <ArrowIcon className={`arrow ${isVisible ? 'rotated' : null}`} stroke="white" />
+                  <h4>My orders</h4>
+                </div>
               </div>
             </div>
         </div>
@@ -70,9 +70,9 @@ const Card = () => {
           <h1>Shopping Cart</h1>
           <div className="projectCart">
             <div className="shop">
-              {price && ordersClient?.map((order:any) => (
+              {ordersClient ? ordersClient?.map((order:any) => (
                 <CartItem key={order.mushroom_id} {...order} />
-                ))}
+                )) : <Spinner />}
             </div>
             <div className="checkOutSect">
         
