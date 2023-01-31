@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom'
-import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from './components/Navbar';
 import PrivateRoute from './components/PrivateRoute';
@@ -9,10 +8,12 @@ import Mushrooms from './pages/Mushrooms';
 import Profile from './pages/Profile';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
+import About from './components/about/AboutBtn';
 
 function App() {
   return (
     <>
+      <About />
       <Routes>
         <Route path='/' element={<Mushrooms />} />
         <Route path='/cart' element={<Cart />} />
@@ -24,8 +25,6 @@ function App() {
         <Route path='/forgot-password' element={<ForgotPassword />} />
       </Routes>
       <Navbar />
-
-      <ToastContainer />
     </>
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
-import './index.scss'
+import './index.scss';
+import './about.css';
 import { BrowserRouter } from 'react-router-dom'
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
