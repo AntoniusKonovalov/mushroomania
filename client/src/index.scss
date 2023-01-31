@@ -1829,7 +1829,7 @@ a {
         transition: all .6s ease;
         position: absolute;
         overflow: auto;
-        height: 80vh;
+        height: 75vh;
         top: 50px;
         right: 0px;
         width: 550px;
@@ -1947,8 +1947,6 @@ a {
     
 
       .cartMainCont{
-        // background-color: #74b482;
-        
         .projectCart{
           
           .shop{
@@ -2012,13 +2010,20 @@ a {
             }
           }
         }
+        
+        .checkOutSect{
+          // position: absolute;
+          // bottom: 80px;
+          z-index: 1;
+        }
       }
 
       .paidOrdersMainCont{
               // Paid Products SlideOut Component
-              top: 90px;
+              top: 80px;
               position: absolute;
               transform: translateX(0);
+              z-index: 0;
               
               .paidOrders{
                 position: absolute;
@@ -2070,6 +2075,7 @@ a {
             }
 
             .paidOrdersMainCont.active {
+              z-index: 2;
               .paidOrders{
                 left: 290px;
               }
