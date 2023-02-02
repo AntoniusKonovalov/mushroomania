@@ -13,10 +13,10 @@ const Text = () => {
         To connect the front and back end, a custom domain was established through the use of Cloudflare DNS service, providing additional security and optimization benefits. The custom domain was secured with HTTPS, further reinforcing the commitment to data privacy and security for all website users.
       </p>
       <p>
-        There are two options for a user to register and login to the website, using the registration form of the website, or using Google OAuth Access. After a registration and verifying Google token, or a password if the user exists on the back end. JWT generated and assigned to a user for a period. The token include user information for a verification and personal purchase history on a "Cart" page. 
+        Users can register and log in to the website either through the registration form or via Google OAuth Access. Upon successful registration and verification, either through a password or a verified Google token, an encoded JWT token is generated and assigned to the user for a specified duration. This token contains user information and is used to verify and retrieve personal information from the SQL database. 
       </p>
       <p>
-        There also an option of edit the product page by providing a user "Admin" permission which would be given by entering Admin credentials of a Log-in section. 
+        For users with "Admin" permission, there is the option to edit the product page by entering the required credentials in the log-in section.
       </p>
       
     </div> 
