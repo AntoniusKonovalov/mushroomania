@@ -14,7 +14,9 @@ const Backdrop = ({ children, onClick }:BackdropProps) => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
+    <div className="textContainer">
      {children} 
+    </div>
     </motion.div>
   )
 }
