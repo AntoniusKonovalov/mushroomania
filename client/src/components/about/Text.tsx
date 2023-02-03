@@ -8,7 +8,7 @@ const Text = () => {
         The development of this website was carried out using a combination of advanced technologies and tools to ensure optimal performance, security, and user experience.
       </p> 
       <p>
-        The front-end was developed using the powerful and efficient React and Redux Toolkit framework, while the back-end utilized the reliable and scalable MySQL database.
+        The front-end was developed using the powerful and efficient React and Redux Toolkit framework, while the back-end utilized the reliable and scalable MySQL database. The website is fully responsive for different screen size using media queries.
       </p>
       <p>
         To connect the front and back end, a custom domain was established through the use of Cloudflare DNS service, providing additional security and optimization benefits. The custom domain was secured with HTTPS, further reinforcing the commitment to data privacy and security for all website users.
