@@ -45,7 +45,7 @@ kbd {
   .textContainer {
     flex: .5;
     padding: 2rem;
-    margin-top: 8rem;
+    margin-top: 1.5rem;
     background-color: #f9f9ef;
     font-family: 'Roboto', sans-serif;
     font-style: italic;
@@ -54,6 +54,14 @@ kbd {
   }
 }
 
+@media (max-width: 500px) {
+  .backdrop {   
+    .textContainer {
+      margin-top: 4rem;
+      font-size: 0.5rem;
+    }
+  }
+}
 
 .orange-gradient {
   background: var(--gradient);
@@ -75,15 +83,6 @@ kbd {
   color: #00b7ff;
 }
 
-/* .modal-button {
-  position: relative;
-  bottom: 1.5rem;
-  padding: 0 3rem;
-  min-height: 3rem;
-  margin: auto auto 0 auto;
-  background: var(--dark);
-  color: var(--light);
-} */
 
 .save-button {
   position: fixed;
