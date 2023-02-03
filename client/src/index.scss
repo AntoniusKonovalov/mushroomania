@@ -1825,7 +1825,7 @@ a {
     }
       // Paid Products SlideOut Component
       .paidOrdersMainCont{
-        transform: translateX(430px);
+        transform: translateX(410px);
         transition: all .6s ease;
         position: absolute;
         overflow: auto;
@@ -1859,10 +1859,7 @@ a {
                 width: 120px;
                 max-height: 70px;
                 object-fit: cover;
-                &:hover{
-                  border: none;
-                  box-shadow: inset 1px 1px 3.6px #BDC0C5, inset -1.3px -1.3px 4px rgba(228, 228, 228, 0.6);
-                }
+                margin: auto 0;
               } 
               .content{
                 display: flex;
@@ -1889,7 +1886,8 @@ a {
             display: flex;
             position: absolute;
             width: 130px;
-            top: 0;      
+            top: 0; 
+            left: -120px;     
             padding: 0px 8px;
             text-decoration: none;
             background-color: #74b482;
