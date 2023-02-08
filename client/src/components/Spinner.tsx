@@ -1,5 +1,5 @@
-import Lottie from 'lottie-react'
-import spinner from '../assets/svg/loader.json'
+import Lottie from 'lottie-react';
+import spinner from '../assets/svg/loader.json';
 
 
 const Spinner = () => {
